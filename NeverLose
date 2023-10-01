@@ -1,0 +1,11 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("neverlose", "Midnight")
+
+-- AutoParry
+local Main = Window:NewTab("Combat")
+local MainSection = Main:NewSection("Combat")
+
+
+MainSection:NewButton("parry", "Click for turn on auto parry", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry%20V2.0.0",true))()
+end)
