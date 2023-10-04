@@ -74,7 +74,9 @@ local function startAutoParry()
             return math.huge
         end
  
-        local distanceToBeCovered = distanceToPlayer - 30
+        local distanceToBeCovered = distanceToPlayer - 35
+        local PingPrediction = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() / 1000
+        local NewDistanceToBeCovered = distanceToBeCovered * PingPrediction
         return distanceToBeCovered / velocityTowardsPlayer
     end
  
