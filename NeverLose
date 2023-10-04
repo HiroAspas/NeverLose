@@ -74,7 +74,7 @@ local function startAutoParry()
             return math.huge
         end
  
-        local distanceToBeCovered = distanceToPlayer - 35
+        local distanceToBeCovered = distanceToPlayer - 30
         return distanceToBeCovered / velocityTowardsPlayer
     end
  
